@@ -1,0 +1,39 @@
+---
+title:  "10월/ 2. BERT 모델에 대해 공부하기  "
+categories:
+  - study
+tags:
+  - 10월
+  - 631호 
+---
+
+<h2>목차</h2> 
+<ul>
+  <li><a href="#section1">1. BERT 모델 개요</a></li>
+  <li><a href="#section2">2. 허깅페이스 코드 분석</a></li>
+  <li><a href="#section3">3. BERT의 핵심 개념 및 함수 분석</a></li>
+</ul>
+
+---
+
+
+# 1. BERT 모델 개요 <a name="section1"></a>
+* BERT의 목적과 구조
+  - 마스크드 언어 모델링 (MLM)과 다음 문장 예측 (NSP)
+  - 사전 훈련(pre-training)과 미세 조정(fine-tuning)
+* BERT와 트랜스포머의 관계
+  - BERT의 트랜스포머 기반 구조
+
+# 2. 허깅페이스 코드 분석 <a name="section2"></a>
+* [허깅페이스 BERT 모델 코드 분석](https://huggingface.co/transformers/model_doc/bert.html)
+  - 모델 클래스 구조 파악 (BertModel, BertTokenizer 등)
+  - 코드 상의 중요한 함수와 클래스 설명
+  - 각 코드가 BERT 구조와 어떤 관련이 있는지 분석
+
+# 3. BERT의 핵심 개념 및 함수 분석 <a name="section3"></a>
+* 멀티헤드 어텐션 구현 분석
+  - 어텐션 스코어 계산 방식
+* 포지셔널 인코딩 코드 분석
+* 모델 학습 및 추론 과정 분석
+  - 학습 중 중요한 함수
+  - 추론 시 사용하는 주요 함수들
